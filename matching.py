@@ -64,6 +64,9 @@ concept2 = list(set(concept2))
 
 list_answers =  list( (set(concept2) & set(answers) ) - set(keywords) )
 
+if (len(list_answers) == 0):
+	list_answers = answers
+
 list_answers1 = []
 
 for i in range(len(list_answers)):
