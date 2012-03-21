@@ -62,7 +62,7 @@ for i in range(len(results)):
 
 concept2 = list(set(concept2))
 
-list_answers =  list( (set(concept2) & set(answers) ) - set(keywords) )
+list_answers =  list( set(concept2) & set(answers) )
 
 list_answers1 = []
 
